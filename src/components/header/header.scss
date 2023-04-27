@@ -1,0 +1,26 @@
+@import '../../abstract/variables.scss';
+
+.header {
+    background-color: $azul-escuro;
+    padding: 30px 120px 30px 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #FFF;
+    font-family: $font-principal;
+    font-size: 20px;
+    font-weight: 700;
+    img {
+        max-width: 330px;
+    }
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 32px;
+        li:hover {
+            cursor: pointer;
+        }
+    }
+}
