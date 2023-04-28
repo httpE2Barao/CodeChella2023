@@ -1,0 +1,30 @@
+.home {
+  background-color: #FBF0DD;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  width: 100vw;
+  height: 80vh;
+  padding: 30px 100px;
+}
+.home div {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding: 10px 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  max-width: 500px;
+}
+.home div h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.home div p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 24px;
+}/*# sourceMappingURL=home.css.map */
