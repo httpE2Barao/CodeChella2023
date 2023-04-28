@@ -1,0 +1,27 @@
+@import '../../abstract/variables/variables.scss';
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: $amarelo;
+    padding: 50px 100px;
+    font-family: $font-principal;
+    font-weight: 500;
+
+    .logo {
+        img {
+            width: 200px;
+        }
+        div {
+            img {
+                transform: translateX(40px);
+                width: 30px;
+            }
+        }
+    }
+    .aside {
+        line-height: 30px;
+    }
+}

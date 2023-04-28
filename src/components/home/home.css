@@ -1,28 +1,34 @@
 .home {
-  background-color: #FBF0DD;
+  background-image: linear-gradient(to bottom, #BFDAE6, #FCF0DD, #FACF9D);
+}
+.home article {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   width: 100vw;
-  height: 80vh;
-  padding: 30px 100px;
+  padding: 70px 100px;
+  margin: 10px 0 30px;
 }
-.home div {
+.home article .imgPrincipal {
+  min-width: 300px;
+}
+.home article div {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   padding: 10px 0;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  max-width: 500px;
+  max-width: 450px;
 }
-.home div h3 {
+.home article div h3 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 24px;
 }
-.home div p {
+.home article div p {
   font-size: 20px;
   font-weight: 500;
   line-height: 40px;

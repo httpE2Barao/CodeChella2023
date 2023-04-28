@@ -3,7 +3,7 @@ import './header.css'
 const Header = () => {
     return(
         <header className='header'>
-            <img src='./imagens/Logo-branco.png'/>
+            <img src='./imagens/Logo-branco.png' alt="Logo CodeChella"/>
             <ul>
                 <li>A experiência</li>
                 <li>Mapa de Setores</li>

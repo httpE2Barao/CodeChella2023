@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FACF9D;
+  padding: 50px 100px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+.footer .logo img {
+  width: 200px;
+}
+.footer .logo div img {
+  transform: translateX(40px);
+  width: 30px;
+}
+.footer .aside {
+  line-height: 30px;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,14 +1,20 @@
 import './banner.css';
 
-const Banner = () => {
+interface BannerProps {
+    titulo?: string
+    src: string
+    alt: string
+}
+
+const Banner = (props:BannerProps) => {
     return (
         <div className='banner'>
             <aside>
-                <h1>Boas-vindas ao</h1>
-                <h1>ao CodeChella2023!</h1>
+                <h1>{props.titulo}</h1>
             </aside>
-            <img src='./imagens/Tema Verão/Desktop/Imagens/1 - Banner -Homepage.png'/>
+            <img src={props.src} alt={props.alt}/>
         </div>
     )
 }
+
 export default Banner
