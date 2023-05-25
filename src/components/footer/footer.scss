@@ -2,11 +2,13 @@
 
 .footer {
     display: flex;
+    flex-flow: column;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
 
     background-color: $amarelo;
-    padding: 50px 100px;
+    padding: 1em;
     font-family: $font-principal;
     font-weight: 500;
 
@@ -16,7 +18,7 @@
         }
         div {
             img {
-                transform: translateX(40px);
+                // transform: translateX(40px);
                 width: 30px;
             }
         }

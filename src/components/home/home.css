@@ -8,8 +8,8 @@
   align-items: center;
   gap: 30px;
   width: 100vw;
-  padding: 70px 100px;
-  margin: 10px 0 30px;
+  padding: 1em;
+  margin-bottom: 2em;
 }
 .home article .imgPrincipal {
   min-width: 300px;
@@ -24,7 +24,7 @@
   max-width: 450px;
 }
 .home article div h3 {
-  font-size: 32px;
+  font-size: 7vw;
   font-weight: 700;
   margin-bottom: 24px;
 }

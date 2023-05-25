@@ -5,13 +5,14 @@
   align-items: center;
 }
 .shows h1 {
+  margin-bottom: 50px;
   font-family: "Calistoga", cursive;
   font-weight: 400;
   font-size: 64px;
 }
 .shows .dia {
   width: 100%;
-  padding: 50px 100px;
+  padding: 0 1em;
   text-align: center;
 }
 .shows .dia .bandas {
@@ -22,7 +23,7 @@
   padding: 50px 0;
   gap: 30px;
   font-family: "Raleway", sans-serif;
-  font-size: 2em;
+  font-size: 8vw;
 }
 .shows .dia .bandas h3 {
   font-weight: 800;
@@ -44,14 +45,14 @@
 }
 .shows .dia .conteiner .line {
   background-color: #DF9010;
-  width: 100%;
+  width: 50vw;
   height: 2px;
 }
 .shows .dia .conteiner .titulo {
   width: 900px;
   background-color: #DF9010;
   font-family: "Calistoga", cursive;
-  font-size: 48px;
+  font-size: 10vw;
   font-weight: 500;
   padding: 16px;
 }/*# sourceMappingURL=shows.css.map */
