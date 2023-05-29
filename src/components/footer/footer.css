@@ -14,7 +14,15 @@
 }
 .footer .logo div img {
   width: 30px;
+  margin: 4px 0.5em 0;
+}
+.footer .logo div img:hover {
+  cursor: pointer;
 }
 .footer .aside {
   line-height: 30px;
+}
+.footer .aside p a {
+  color: #000;
+  font-weight: 600;
 }/*# sourceMappingURL=footer.css.map */
