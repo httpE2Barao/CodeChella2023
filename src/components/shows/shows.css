@@ -1,5 +1,4 @@
 .shows {
-  width: 100vw;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

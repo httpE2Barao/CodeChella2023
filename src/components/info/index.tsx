@@ -1,10 +1,10 @@
 import Button from '../button'
 import Shows from '../shows'
-import './home.css'
+import './info.css'
 
-const Home = () => {
+const Info = () => {
     return (
-        <section className='home'>
+        <section className='info'>
             <article>
                 <img 
                     className='imgPrincipal'
@@ -25,4 +25,4 @@ const Home = () => {
         </section>
     )
 }
-export default Home
+export default Info

@@ -18,7 +18,15 @@
   padding: 0;
   display: flex;
   flex-flow: row;
-  gap: 4vw;
+  gap: 2vw;
+}
+.header ul li {
+  background-color: #296a8a;
+  padding: 1px 5px 5px;
+  border-radius: 5px;
+}
+.header ul li:hover {
+  background-color: #2E7BA2;
 }
 .header ul li a {
   font-size: 3vw;

@@ -21,8 +21,14 @@
         padding: 0;
         display: flex;
         flex-flow: row;
-        gap: 4vw;
+        gap: 2vw;
         li {
+            background-color: $azul-botao;
+            padding: 1px 5px 5px;
+            border-radius: 5px;
+            &:hover {
+                background-color: $azul-escuro;
+            }
             a {
                 font-size: 3vw;
                 color: #FFF;

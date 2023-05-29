@@ -1,6 +1,6 @@
 @import '../../abstract/variables/variables';
 
-.home {
+.info {
     background-image: $bkgdGradient;
     article {
         display: flex;
@@ -10,7 +10,6 @@
         
         gap: 30px;
         
-        width: 100vw;
         padding: 1em;
         margin-bottom: 2em;
         .imgPrincipal {

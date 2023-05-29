@@ -1,20 +1,19 @@
-.home {
+.info {
   background-image: linear-gradient(to bottom, #BFDAE6, #FCF0DD, #FACF9D);
 }
-.home article {
+.info article {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
-  width: 100vw;
   padding: 1em;
   margin-bottom: 2em;
 }
-.home article .imgPrincipal {
+.info article .imgPrincipal {
   min-width: 300px;
 }
-.home article div {
+.info article div {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -23,14 +22,14 @@
   font-family: "Raleway", sans-serif;
   max-width: 450px;
 }
-.home article div h3 {
+.info article div h3 {
   font-size: 7vw;
   font-weight: 700;
   margin-bottom: 24px;
 }
-.home article div p {
+.info article div p {
   font-size: 20px;
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 24px;
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=info.css.map */
