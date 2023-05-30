@@ -26,7 +26,7 @@ const Setores = () => {
         text1="Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área."
 
         titulo2="Cadeiras"
-        src2="./imagens/Tema Verão/Desktop/Imagens/3 - Mapa de setores3.png"
+        src2="./imagens/Tema Verão/Desktop/Imagens/3 - Mapa de setores4.png"
         alt2="Imagem de cadeiras dobradas estilo 'estágio de futebol'"
         text2="Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas."
       />
