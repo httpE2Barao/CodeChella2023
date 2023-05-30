@@ -2,9 +2,11 @@ import './header.css'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-    return(
+    return (
         <header className='header'>
-            <img src='./imagens/Logo-branco.png' alt="Logo CodeChella"/>
+            <Link to="/">
+                <img src='./imagens/Logo-branco.png' alt="Logo CodeChella" />
+            </Link>
             <ul>
                 <li><Link to="/experiencia">A Experiência</Link></li>
                 <li><Link to="/setores">Mapa de Setores</Link></li>

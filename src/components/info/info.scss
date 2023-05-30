@@ -7,7 +7,6 @@
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
-        
         gap: 30px;
         
         padding: 1em;
@@ -34,6 +33,33 @@
                 font-weight: 500;
                 line-height: 40px;
                 margin-bottom: 24px;
+            }
+        }
+    }
+    .setores_mapa {
+        img {
+            border-radius: 20px;
+        }
+        .setores_lista {
+            display: flex;
+            flex-flow: column;
+            ul {
+                text-align: left;
+                padding: 0;
+                font-weight: 500;
+                line-height: 1.5em;
+                li {
+                    .quadrado {
+                        display: inline-block;
+                        transform: translateY(3px);
+                        margin-right: 10px;
+                        width: 20px;
+                    }
+                    .azul { background-color: #0E7DF1; }
+                    .roza { background-color: #FE016E; }
+                    .verde { background-color: #01A89E; }
+                    .roxo { background-color: #3F51B5; }
+                }
             }
         }
     }

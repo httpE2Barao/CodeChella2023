@@ -32,4 +32,35 @@
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 24px;
+}
+.info .setores_mapa img {
+  border-radius: 20px;
+}
+.info .setores_mapa .setores_lista {
+  display: flex;
+  flex-flow: column;
+}
+.info .setores_mapa .setores_lista ul {
+  text-align: left;
+  padding: 0;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.info .setores_mapa .setores_lista ul li .quadrado {
+  display: inline-block;
+  transform: translateY(3px);
+  margin-right: 10px;
+  width: 20px;
+}
+.info .setores_mapa .setores_lista ul li .azul {
+  background-color: #0E7DF1;
+}
+.info .setores_mapa .setores_lista ul li .roza {
+  background-color: #FE016E;
+}
+.info .setores_mapa .setores_lista ul li .verde {
+  background-color: #01A89E;
+}
+.info .setores_mapa .setores_lista ul li .roxo {
+  background-color: #3F51B5;
 }/*# sourceMappingURL=info.css.map */
