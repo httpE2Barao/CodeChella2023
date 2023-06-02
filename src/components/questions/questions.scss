@@ -1,0 +1,45 @@
+@import '../../abstract/variables/variables';
+
+
+.perguntas {
+  padding: 2em 0;
+  background-image: $bkgdGradient;
+}
+.perguntas_titulo {
+  font-family: $font-titulo;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 62px;
+  letter-spacing: 2px;
+  padding: 0 0 1em;
+}
+.perguntas_flex {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: .3em 1em;
+
+  .perguntas_container {
+    font-family: $font-principal;
+    width: 80vw;
+    margin: 0 auto;
+
+    .container_pergunta {
+      background-color: $azul-escuro;
+      justify-content: space-between;
+      display: flex;
+      flex-flow: row;
+      cursor: pointer;
+      color: #fff;
+      padding: 1em;
+    }
+
+    .container_resposta {
+      // display: none;
+      background-color: $azul-claro;
+      padding: 1em;
+      font-weight: 500;
+      line-height: 30px;
+    }
+  }
+}

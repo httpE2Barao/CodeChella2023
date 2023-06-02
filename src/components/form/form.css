@@ -1,0 +1,40 @@
+.formulario {
+  background-image: linear-gradient(to bottom, #BFDAE6, #FCF0DD, #FACF9D);
+  padding: 3em;
+}
+.formulario .formulario_titulo {
+  text-align: center;
+  font-family: "Calistoga", cursive;
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+.formulario .formulario_flex {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  font-weight: 600;
+}
+.formulario .formulario_flex input, .formulario .formulario_flex select {
+  height: 6vh;
+  margin: 0.3em 0 1em;
+  padding: 0 1em;
+  border: none;
+}
+.formulario .formulario_flex .botao {
+  background-color: #2E7BA2;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.463);
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  width: 25vw;
+  margin: 20px auto 5px;
+  height: 40px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.formulario .formulario_flex .botao:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.463);
+  transition: box-shadow 0.2s, transform 0.2s;
+}/*# sourceMappingURL=form.css.map */

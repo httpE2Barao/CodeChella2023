@@ -1,0 +1,46 @@
+@import '../../abstract/variables/variables';
+
+.formulario {
+  background-image: $bkgdGradient;
+  padding: 3em;
+
+  .formulario_titulo {
+    text-align: center;
+    font-family: $font-titulo;
+    font-weight: 400;
+    margin-bottom: 2em;
+  }
+
+  .formulario_flex {
+    font-family: $font-principal;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    font-weight: 600;
+
+    input, select {
+      height: 6vh;
+      margin: .3em 0 1em;
+      padding: 0 1em;
+      border: none;
+    }
+
+    .botao {
+      background-color: $azul-escuro;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.463);
+      border-radius: 10px;
+      font-weight: 600;
+      color: white;
+      width: 25vw;
+      margin: 20px auto 5px;
+      height: 40px;
+      transition: box-shadow .2s, transform .2s;
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+        box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.463);
+        transition: box-shadow .2s, transform .2s;
+      }
+    }
+  }
+}
