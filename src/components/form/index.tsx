@@ -1,6 +1,6 @@
 // import { Formik, Form, Field } from 'formik';
-import './form.css';
 import Validacao from './validacao';
+import './form.css';
 
 const Formulario = () => {
   return (
@@ -26,8 +26,8 @@ const Formulario = () => {
           <label htmlFor="dia" className='formulario_label'>Dia:</label>
           <select id="dia" required>
             <option value=""></option>
-            <option value="SÁBADO">11/03</option>
-            <option value="DOMINGO">12/03</option>
+            <option value="Sábado">Sábado - 11/03</option>
+            <option value="Domingo">Domingo - 12/03</option>
           </select>
 
           <label htmlFor="data" className="formulario_label">Data de Nascimento:</label>

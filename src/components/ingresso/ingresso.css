@@ -1,0 +1,44 @@
+.ingresso {
+  background-image: linear-gradient(to bottom, #BFDAE6, #FCF0DD, #FACF9D);
+  text-align: center;
+  padding: 3em;
+  font-family: "Raleway", sans-serif;
+}
+.ingresso h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.ingresso .ingresso_container {
+  background-image: linear-gradient(to bottom, #BFDAE6, #FCF0DD, #FACF9D);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.284);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  margin: 3em 0;
+  padding: 1.5em 1.5em 2.5em;
+}
+.ingresso .ingresso_container h4 {
+  color: rgb(75, 75, 75);
+  font-size: 7vw;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.ingresso .ingresso_container p {
+  color: rgb(75, 75, 75);
+  font-size: 4vw;
+  font-weight: 600;
+  line-height: 2em;
+}
+.ingresso .ingresso_container aside {
+  display: flex;
+  justify-content: space-between;
+}
+.ingresso .ingresso_container aside .logo {
+  width: 130px;
+}
+.ingresso .ingresso_container .QR {
+  align-self: center;
+  margin: 1.5em 0;
+  width: 65%;
+}/*# sourceMappingURL=ingresso.css.map */

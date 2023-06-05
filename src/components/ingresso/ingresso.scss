@@ -1,0 +1,53 @@
+@import '../../abstract/variables/variables.scss';
+
+.ingresso {
+  background-image: $bkgdGradient;
+  text-align: center;
+  padding: 3em;
+  font-family: $font-principal;
+
+  h3 {
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  .ingresso_container {
+    background-image: $bkgdGradient;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.284);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    margin: 3em 0;
+    padding: 1.5em 1.5em 2.5em;
+
+    h4 {
+      color: rgb(75, 75, 75);
+      font-size: 7vw;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    p {
+      color: rgb(75, 75, 75);
+      font-size: 4vw;
+      font-weight: 600;
+      line-height: 2em;
+    }
+
+    aside {
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        width: 130px;
+      }
+    }
+
+    .QR {
+      align-self: center;
+      margin: 1.5em 0;
+      width: 65%;
+    }
+  }
+}

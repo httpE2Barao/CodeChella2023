@@ -9,15 +9,20 @@
   font-family: "Raleway", sans-serif;
   font-weight: 500;
 }
-.footer .logo img {
+.footer .logo_container img {
   width: 200px;
 }
-.footer .logo div img {
+.footer .logo_container img:hover {
+  cursor: pointer;
+}
+.footer .logo_container div img {
   width: 30px;
   margin: 4px 0.5em 0;
+  border-radius: 7px;
 }
-.footer .logo div img:hover {
+.footer .logo_container div img:hover {
   cursor: pointer;
+  background-color: #fff;
 }
 .footer .aside {
   line-height: 30px;
@@ -25,4 +30,7 @@
 .footer .aside p a {
   color: #000;
   font-weight: 600;
+}
+.footer .aside p a:hover {
+  border-bottom: 2px solid black;
 }/*# sourceMappingURL=footer.css.map */

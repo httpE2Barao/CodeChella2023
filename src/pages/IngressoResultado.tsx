@@ -1,8 +1,9 @@
 import Banner from "../components/banner";
+import Footer from "../components/footer";
 import Header from "../components/header";
 import Ingresso, { ingresso } from "../components/ingresso";
 
-const IngressoResultado = (props: any) => {
+const IngressoResultado = () => {
   return (
     <>
       <Header />
@@ -12,13 +13,10 @@ const IngressoResultado = (props: any) => {
         alt="Imagem de pessoas comemorando"
       />
 
-      { console.log('2', props.nome, props.tipo, props.dia) }
+      {/* { console.log('2', props.nome, props.tipo, props.dia) } */}
 
-      <Ingresso 
-        nome={props.nome}
-        tipo={props.tipo}
-        dia={props.dia}
-      />
+      <Ingresso />
+      <Footer />
     </>
   )
 }

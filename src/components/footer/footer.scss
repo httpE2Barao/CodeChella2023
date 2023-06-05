@@ -12,17 +12,21 @@
     font-family: $font-principal;
     font-weight: 500;
 
-    .logo {
+    .logo_container {
         img {
             width: 200px;
+            &:hover {
+                cursor: pointer;
+            }
         }
         div {
             img {
-                // transform: translateX(40px);
                 width: 30px;
                 margin: 4px .5em 0;
+                border-radius: 7px;
                 &:hover {
                     cursor: pointer;
+                    background-color: #fff;
                 }
             }
         }
@@ -33,6 +37,9 @@
             a {
                 color: #000;
                 font-weight: 600;
+                &:hover {
+                    border-bottom: 2px solid black;
+                }
             }
         }
     }
