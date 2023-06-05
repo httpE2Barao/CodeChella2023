@@ -5,6 +5,7 @@ import Experiencia from "./pages/Experiencia";
 import Setores from "./pages/Setores";
 import Informacoes from "./pages/Informacoes";
 import Ingresso from "./pages/Ingresso";
+import IngressoResultado from "./pages/IngressoResultado";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route Component={Setores} path="/setores"/>
         <Route Component={Informacoes} path="/informacoes" />
         <Route Component={Ingresso} path="/ingresso" />
+        <Route Component={IngressoResultado} path="/ingresso-resumo" />
       </Routes>
     </BrowserRouter>
   )
