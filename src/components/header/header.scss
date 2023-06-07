@@ -23,13 +23,14 @@
     input {
         display: none;
     }
+
     .menu_botao {
         display: none;
     }
+
     .menu {
         padding: 0;
-        // display: flex;
-        display: none;
+        display: flex;
         flex-flow: row;
         gap: 2vw;
 
@@ -50,32 +51,29 @@
     }
 
     @media screen and (max-width: 440px) {
-            .menu_botao {
-                display: block;
-                width: 3em;
-                padding: 0.5em;
-            }
+        .menu_botao {
+            display: block;
+            width: 3em;
+            padding: 0.5em;
+        }
 
-            #menu:checked ~ .menu {
-                display: contents;
-            }
+        #menu:checked~.menu {
+            display: contents;
+        }
 
-            .menu {
-                background-color: $azul-escuro;
-                text-align: center;
-                li {
-                    margin-top: .5em;
-                    width: 60vw;
-                    a {
-                        font-size: 4vw;
-                    }
+        .menu {
+            display: none;
+            background-color: $azul-escuro;
+            text-align: center;
+
+            li {
+                margin-top: .5em;
+                width: 60vw;
+
+                a {
+                    font-size: 4vw;
                 }
             }
-    }
-
-    @media screen and (min-width: 440px) {
-        .menu {
-            display: flex;
         }
     }
 }

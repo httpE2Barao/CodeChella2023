@@ -23,7 +23,7 @@
 }
 .header .menu {
   padding: 0;
-  display: none;
+  display: flex;
   flex-flow: row;
   gap: 2vw;
 }
@@ -49,6 +49,7 @@
     display: contents;
   }
   .header .menu {
+    display: none;
     background-color: #2E7BA2;
     text-align: center;
   }
@@ -58,10 +59,5 @@
   }
   .header .menu li a {
     font-size: 4vw;
-  }
-}
-@media screen and (min-width: 440px) {
-  .header .menu {
-    display: flex;
   }
 }/*# sourceMappingURL=header.css.map */
