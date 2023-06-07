@@ -1,5 +1,6 @@
 .header {
   background-color: #2E7BA2;
+  position: relative;
   padding: 1em;
   gap: 5px;
   display: flex;
@@ -14,21 +15,53 @@
 .header img {
   max-width: 330px;
 }
-.header ul {
+.header input {
+  display: none;
+}
+.header .menu_botao {
+  display: none;
+}
+.header .menu {
   padding: 0;
-  display: flex;
+  display: none;
   flex-flow: row;
   gap: 2vw;
 }
-.header ul li {
+.header .menu li {
   background-color: #296a8a;
   padding: 1px 5px 5px;
   border-radius: 5px;
 }
-.header ul li:hover {
+.header .menu li:hover {
   background-color: #2E7BA2;
 }
-.header ul li a {
+.header .menu li a {
   font-size: 3vw;
   color: #FFF;
+}
+@media screen and (max-width: 440px) {
+  .header .menu_botao {
+    display: block;
+    width: 3em;
+    padding: 0.5em;
+  }
+  .header #menu:checked ~ .menu {
+    display: contents;
+  }
+  .header .menu {
+    background-color: #2E7BA2;
+    text-align: center;
+  }
+  .header .menu li {
+    margin-top: 0.5em;
+    width: 60vw;
+  }
+  .header .menu li a {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 440px) {
+  .header .menu {
+    display: flex;
+  }
 }/*# sourceMappingURL=header.css.map */

@@ -2,6 +2,7 @@
 
 .header {
     background-color: $azul-escuro;
+    position: relative;
     padding: 1em;
     gap: 5px;
 
@@ -14,25 +15,67 @@
     font-family: $font-principal;
     font-size: 20px;
     font-weight: 700;
+
     img {
         max-width: 330px;
     }
-    ul {
+
+    input {
+        display: none;
+    }
+    .menu_botao {
+        display: none;
+    }
+    .menu {
         padding: 0;
-        display: flex;
+        // display: flex;
+        display: none;
         flex-flow: row;
         gap: 2vw;
+
         li {
             background-color: $azul-botao;
             padding: 1px 5px 5px;
             border-radius: 5px;
+
             &:hover {
                 background-color: $azul-escuro;
             }
+
             a {
                 font-size: 3vw;
                 color: #FFF;
             }
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+            .menu_botao {
+                display: block;
+                width: 3em;
+                padding: 0.5em;
+            }
+
+            #menu:checked ~ .menu {
+                display: contents;
+            }
+
+            .menu {
+                background-color: $azul-escuro;
+                text-align: center;
+                li {
+                    margin-top: .5em;
+                    width: 60vw;
+                    a {
+                        font-size: 4vw;
+                    }
+                }
+            }
+    }
+
+    @media screen and (min-width: 440px) {
+        .menu {
+            display: flex;
         }
     }
 }
