@@ -16,11 +16,11 @@ const Ingresso = (props: ingresso) => {
         Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</h3>
       <div className="ingresso_container">
         <aside>
-          <img className='logo' src="./imagens/Tema Verão/Desktop/Logos/Logo branco.svg" alt="Logo Codechella" />
-          <img className='simbolo' src="./imagens/Tema Verão/Desktop/Logos/Símbolo ingresso.svg" alt="Simbolo do Ingresso" />
+          <img className='logo' src="./imagens/Logos/Logo cinza.svg" alt="Logo Codechella" />
+          <img className='simbolo' src="./imagens/Logos/Símbolo ingresso.svg" alt="Simbolo do Ingresso" />
         </aside>
 
-        <img className='QR' src="./imagens/Tema Verão/Desktop/Imagens/6 - Qr code.svg" alt="QR Code" />
+        <img className='QR' src="./imagens/pngs/6 - Qr code.svg" alt="QR Code" />
 
         <h4>{props.nome} Exemplo de Nome</h4>
         <p>{props.tipo}Tipo: Pista Premium</p>

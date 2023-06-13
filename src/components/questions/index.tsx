@@ -13,7 +13,9 @@ const Pergunta = (props: perguntas) => {
       <div className="perguntas_container">
         <div className='container_pergunta' onClick={() => setOpen(!open)}>
           <h3>{props.pergunta}</h3>
-          <img src="./imagens/Tema Verão/Desktop/Ícones/svgs/arrow_drop_down.svg" alt="" />
+          { open ? <img className='fechar' src="./imagens/Ícones/svgs/arrow_drop_down.svg" alt="seta" />
+         : <img src="./imagens/Ícones/svgs/arrow_drop_down.svg" alt="seta" />
+        }
         </div>
         { open ?
           <div className='container_resposta'><p>{props.resposta}</p></div>

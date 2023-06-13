@@ -9,7 +9,7 @@ const IngressoResultado = () => {
       <Header />
       <Banner
         titulo="Seu ingresso está aqui!"
-        src="./imagens/Tema Verão/Desktop/Imagens/6 - Banner - seu ingresso está aqui.png"
+        src="./imagens/pngs/6 - Banner - seu ingresso está aqui.png"
         alt="Imagem de pessoas comemorando"
       />
 

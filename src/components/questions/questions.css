@@ -32,6 +32,9 @@
   color: #fff;
   padding: 1em;
 }
+.perguntas_flex .perguntas_container .container_pergunta .fechar {
+  transform: rotate(180deg);
+}
 .perguntas_flex .perguntas_container .container_resposta {
   background-color: #C8DEEF;
   padding: 1em;

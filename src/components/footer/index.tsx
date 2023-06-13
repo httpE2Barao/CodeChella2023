@@ -5,12 +5,12 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='logo_container'>
-                <img className='logo' src="./imagens/Tema Verão/Desktop/Logos/Logo cinza.svg" alt="Logo CodeChella" />
+                <img className='logo' src="./imagens/Logos/Logo cinza.svg" alt="Logo CodeChella" />
                 <div>
                     <p>Acesse as nossas contas:</p>
-                    <img src="./imagens/Tema Verão/Desktop/Ícones/svgs/Ícone whatsapp.svg" alt="Ícone Whatsapp" />
-                    <img src="./imagens/Tema Verão/Desktop/Ícones/svgs/Ícone Twitch.svg" alt="Ícone Twitch" />
-                    <img src="./imagens/Tema Verão/Desktop/Ícones/svgs/Ícone instagram.svg" alt="Ícone Instagram" />
+                    <img src="./imagens/Ícones/svgs/Ícone whatsapp.svg" alt="Ícone Whatsapp" />
+                    <img src="./imagens/Ícones/svgs/Ícone Twitch.svg" alt="Ícone Twitch" />
+                    <img src="./imagens/Ícones/svgs/Ícone instagram.svg" alt="Ícone Instagram" />
                 </div>
             </div>
             <div className='aside'>

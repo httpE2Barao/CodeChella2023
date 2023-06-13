@@ -10,7 +10,7 @@ const Informacoes = () => {
       <Header />
       <Banner
         titulo="Informações"
-        src="./imagens/Tema Verão/Desktop/Imagens/4 - Banner - infos gerais.png"
+        src="./imagens/pngs/4 - Banner - infos gerais.png"
         alt="Imagem de um show com pessoas com as mãos pra cima"
       />
       <section className="perguntas">

@@ -25,7 +25,7 @@ const Content = (Content: content) => {
 
       {Content.setores == true ?
         <article className="setores_mapa">
-          <img src="./imagens/Tema Verão/Desktop/Imagens/3 - Mapa setores1.png" alt="Mapa dos setores: Palco, Pista premium, Pista comum e alguns lugares com acessibilidade" />
+          <img src="./imagens/pngs/3 - Mapa setores1.png" alt="Mapa dos setores: Palco, Pista premium, Pista comum e alguns lugares com acessibilidade" />
           <div className="setores_lista">
             <h3>Legenda:</h3>
             <ul>

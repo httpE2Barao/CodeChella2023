@@ -32,10 +32,12 @@
       cursor: pointer;
       color: #fff;
       padding: 1em;
+      .fechar {
+        transform: rotate(180deg)
+      }
     }
 
     .container_resposta {
-      // display: none;
       background-color: $azul-claro;
       padding: 1em;
       font-weight: 500;
