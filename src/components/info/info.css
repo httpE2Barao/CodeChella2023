@@ -33,9 +33,6 @@
   line-height: 40px;
   margin-bottom: 24px;
 }
-.info .setores_mapa img {
-  border-radius: 20px;
-}
 .info .setores_mapa .setores_lista {
   display: flex;
   flex-flow: column;
@@ -63,4 +60,32 @@
 }
 .info .setores_mapa .setores_lista ul li .roxo {
   background-color: #3F51B5;
+}
+
+@media screen and (min-width: 768px) {
+  .info article {
+    margin: 3em 0;
+  }
+  .info article .imgPrincipal {
+    width: 45vw;
+  }
+  .info article div {
+    max-width: 45vw;
+  }
+  .info article div h3 {
+    font-size: 4vw;
+  }
+  .info article div p {
+    line-height: 1.5em;
+    font-size: 2vw;
+  }
+  .info .invertido {
+    flex-flow: row-reverse;
+  }
+  .info .setores_mapa {
+    flex-flow: row-reverse;
+  }
+  .info .setores_mapa img {
+    max-width: 55vw;
+  }
 }/*# sourceMappingURL=info.css.map */

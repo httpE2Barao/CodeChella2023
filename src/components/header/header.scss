@@ -13,7 +13,6 @@
 
     color: #FFF;
     font-family: $font-principal;
-    font-size: 20px;
     font-weight: 700;
 
     img {
@@ -39,14 +38,14 @@
             padding: 1px 5px 5px;
             border-radius: 5px;
 
+            a {
+                color: #FFF;
+            }
+
             &:hover {
                 background-color: $azul-escuro;
             }
 
-            a {
-                font-size: 3vw;
-                color: #FFF;
-            }
         }
     }
 
@@ -72,6 +71,27 @@
 
                 a {
                     font-size: 4vw;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .menu {
+            li {
+                a {
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .menu {
+            li {
+                padding: .5em 1em;
+                a {
+                    font-size: 20px;
                 }
             }
         }

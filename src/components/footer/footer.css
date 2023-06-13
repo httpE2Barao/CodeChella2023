@@ -33,4 +33,12 @@
 }
 .footer .aside p a:hover {
   border-bottom: 2px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 3em 0;
+    flex-flow: row;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=footer.css.map */

@@ -8,7 +8,6 @@
 .banner img {
   overflow-x: clip;
   position: relative;
-  right: 27%;
   z-index: -1;
   height: 100%;
 }
@@ -18,6 +17,13 @@
   position: absolute;
 }
 .banner aside h1 {
+  margin: 0 10vw;
   font-size: 10vw;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .banner aside h1 {
+    font-size: 6vw;
+  }
 }/*# sourceMappingURL=banner.css.map */

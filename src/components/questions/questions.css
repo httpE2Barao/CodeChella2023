@@ -37,4 +37,10 @@
   padding: 1em;
   font-weight: 500;
   line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .perguntas .perguntas_flex .perguntas_container {
+    width: 600px;
+  }
 }/*# sourceMappingURL=questions.css.map */

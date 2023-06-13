@@ -58,3 +58,19 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .shows {
+        .dia {
+            .conteiner {
+                .titulo {
+                    font-size: 7vw;
+                }
+            }
+            .bandas {
+                padding: 50px 10vw;
+                font-size: 4vw;
+            }
+        }
+    }
+}

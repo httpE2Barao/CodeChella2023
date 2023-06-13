@@ -38,8 +38,8 @@ const Content = (Content: content) => {
           </div>
         </article> : ''}
 
-      <article>
-        <img src={Content.src} alt={Content.alt} />
+      <article className='invertido'>
+        <img className='imgPrincipal' src={Content.src} alt={Content.alt} />
         <div>
           <h3>{Content.titulo}</h3>
           <p>{Content.text}</p>
@@ -47,15 +47,15 @@ const Content = (Content: content) => {
       </article>
 
       <article>
-        <img src={Content.src1} alt={Content.alt1} />
+        <img className='imgPrincipal' src={Content.src1} alt={Content.alt1} />
         <div>
           <h3>{Content.titulo1}</h3>
           <p>{Content.text1}</p>
         </div>
       </article>
 
-      <article>
-        <img src={Content.src2} alt={Content.alt2} />
+      <article className='invertido'>
+        <img className='imgPrincipal' src={Content.src2} alt={Content.alt2} />
         <div>
           <h3>{Content.titulo2}</h3>
           <p>{Content.text2}</p>

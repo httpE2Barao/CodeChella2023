@@ -37,4 +37,14 @@
   transform: translateY(-3px);
   box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.463);
   transition: box-shadow 0.2s, transform 0.2s;
+}
+
+@media screen and (min-width: 768px) {
+  .formulario .formulario_flex {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .formulario .formulario_flex .botao {
+    width: 200px;
+  }
 }/*# sourceMappingURL=form.css.map */

@@ -6,7 +6,7 @@
   padding: 3em;
   font-family: $font-principal;
 
-  h3 {
+  .ingresso_titulo {
     font-size: 4vw;
     font-weight: 700;
     margin-bottom: 24px;
@@ -15,10 +15,11 @@
   .ingresso_container {
     background-image: $bkgdGradient;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.284);
+    max-width: 400px;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
-    margin: 3em 0;
+    margin: 3em auto;
     padding: 1.5em 1.5em 2.5em;
 
     h4 {
@@ -48,6 +49,33 @@
       align-self: center;
       margin: 1.5em 0;
       width: 65%;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .ingresso {
+    .ingresso_container {
+      h4 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ingresso {
+    padding: 3em 20vw;
+
+    .ingresso_titulo {
+      font-size: 3vw;
+    }
+
+    .ingresso_container {
+      width: 80%;
     }
   }
 }

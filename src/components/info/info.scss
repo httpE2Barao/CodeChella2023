@@ -2,32 +2,37 @@
 
 .info {
     background-image: $bkgdGradient;
+
     article {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
         gap: 30px;
-        
+
         padding: 1em;
         margin-bottom: 2em;
+
         .imgPrincipal {
             min-width: 300px;
         }
+
         div {
             display: flex;
             flex-flow: wrap;
             justify-content: center;
             padding: 10px 0;
-        
+
             text-align: center;
             font-family: $font-principal;
             max-width: 450px;
+
             h3 {
                 font-size: 7vw;
                 font-weight: 700;
                 margin-bottom: 24px;
             }
+
             p {
                 font-size: 20px;
                 font-weight: 500;
@@ -36,18 +41,19 @@
             }
         }
     }
+
     .setores_mapa {
-        img {
-            border-radius: 20px;
-        }
+
         .setores_lista {
             display: flex;
             flex-flow: column;
+
             ul {
                 text-align: left;
                 padding: 0;
                 font-weight: 500;
                 line-height: 1.5em;
+
                 li {
                     .quadrado {
                         display: inline-block;
@@ -55,11 +61,59 @@
                         margin-right: 10px;
                         width: 20px;
                     }
-                    .azul { background-color: #0E7DF1; }
-                    .roza { background-color: #FE016E; }
-                    .verde { background-color: #01A89E; }
-                    .roxo { background-color: #3F51B5; }
+
+                    .azul {
+                        background-color: #0E7DF1;
+                    }
+
+                    .roza {
+                        background-color: #FE016E;
+                    }
+
+                    .verde {
+                        background-color: #01A89E;
+                    }
+
+                    .roxo {
+                        background-color: #3F51B5;
+                    }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .info {
+        article {
+            margin: 3em 0;
+
+            .imgPrincipal {
+                width: 45vw;
+            }
+
+            div {
+                max-width: 45vw;
+
+                h3 {
+                    font-size: 4vw;
+                }
+
+                p {
+                    line-height: 1.5em;
+                    font-size: 2vw;
+                }
+            }
+        }
+
+        .invertido {
+            flex-flow: row-reverse;
+        }
+
+        .setores_mapa {
+            flex-flow: row-reverse;
+            img {
+                max-width: 55vw;
             }
         }
     }
