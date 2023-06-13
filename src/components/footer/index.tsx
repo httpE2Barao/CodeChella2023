@@ -15,8 +15,7 @@ const Footer = () => {
             </div>
             <div className='aside'>
                 <p>Desenvolvido por <a target='blank' href="https://github.com/httpE2Barao">
-                    Elias Barão.</a><br />
-                    Projeto fictício sem fins comerciais.
+                    Elias Barão.</a>
                 </p>
             </div>
         </div>
