@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     img {
-        overflow-x: clip;
+        overflow-x: unset;
         position: relative;
         z-index: -1;
         height: 100%;
