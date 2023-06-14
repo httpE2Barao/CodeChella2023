@@ -10,7 +10,7 @@ const Header = () => {
 
             <input type="checkbox" name="menu" id="menu" />
             <label htmlFor="menu">
-                <img className='menu_botao' src="./imagens/Tema Verão/Desktop/Ícones/svgs/menu.svg" alt="menu" />
+                <img className='menu_botao' src="./imagens/Ícones/svgs/menu.svg" alt="menu" />
             </label>
 
             <ul className='menu'>
