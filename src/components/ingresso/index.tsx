@@ -1,13 +1,13 @@
 import './ingresso.css'
 
 export interface ingresso {
- nome?: string | undefined
- tipo?: string | undefined
- dia?: string | undefined
+ nome: string | undefined
+ tipo: string | undefined
+ dia: string | undefined
+ data?: string | undefined
 }
 
 const Ingresso = (props: ingresso) => {
-  console.log(props)
   console.log('3', props.nome, props.tipo, props.dia)
 
   return (

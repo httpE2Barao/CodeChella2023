@@ -15,7 +15,9 @@ const IngressoResultado = () => {
 
       {/* { console.log('2', props.nome, props.tipo, props.dia) } */}
 
-      <Ingresso />
+      {/* <Ingresso 
+
+      > */}
       <Footer />
     </>
   )
