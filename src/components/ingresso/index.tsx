@@ -22,9 +22,9 @@ const Ingresso = (props: ingresso) => {
 
         <img className='QR' src="./imagens/pngs/6 - Qr code.svg" alt="QR Code" />
 
-        <h4>{props.nome} Exemplo de Nome</h4>
-        <p>{props.tipo}Tipo: Pista Premium</p>
-        <p>Dia: {props.dia} 12/03 - SÁBADO</p>
+        <h4>{props.nome}</h4>
+        <p>{props.tipo}</p>
+        <p>Dia: {props.dia}</p>
         <p>Local: Curitiba-PR</p>
       </div>
     </section>

@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import Ingresso, { ingresso } from "../components/ingresso";
 
-const IngressoResultado = () => {
+const IngressoResultado = (props: any) => {
   return (
     <>
       <Header />
@@ -13,11 +13,13 @@ const IngressoResultado = () => {
         alt="Imagem de pessoas comemorando"
       />
 
-      {/* { console.log('2', props.nome, props.tipo, props.dia) } */}
+      {/* { console.log('Resultado', props.nome, props.tipo, props.dia) } */}
 
-      {/* <Ingresso 
-
-      > */}
+      <Ingresso
+        nome="Eu mesmo pq?"
+        dia="Nunca"
+        tipo="Cadeiras Vuadoras"
+      /> 
       <Footer />
     </>
   )

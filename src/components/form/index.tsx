@@ -28,21 +28,19 @@ export const Formulario = () => {
         return (alert('Você deve ser maior que 16 anos.'))
       } else if (idade > 100) {
         return (alert('Idade Inválida'))
-      } else {
-        return (console.log("Deu certo!"))
       }
     }
-    // return (
-    // <>
-    //   {console.log(<Ingresso 
-    //   nome='Elias Barão'
-    //   dia='Sábado'
-    //   tipo='Pista Premium'
-    //   data='02-05-2002'
-    //   />)}
-    //   {window.location.href = '/ingresso-resumo'}
-    // </>
-    // )
+    return (
+    <>
+      <Ingresso 
+      nome='Elias Barão'
+      dia='Sábado'
+      tipo='Pista Premium'
+      data='02-05-2002'
+      />
+      {window.location.href = '/ingresso-resumo'}
+    </>
+    )
   }
   return (
     <section className="formulario">
