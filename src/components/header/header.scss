@@ -7,15 +7,15 @@
     gap: 5px;
 
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     color: #FFF;
     font-family: $font-principal;
     font-weight: 700;
 
-    img {
+    .logo {
         max-width: 330px;
     }
 
@@ -29,6 +29,7 @@
 
     .menu {
         padding: 0;
+        margin: 0 auto;
         display: flex;
         flex-flow: row;
         gap: 2vw;
@@ -50,6 +51,7 @@
     }
 
     @media screen and (max-width: 440px) {
+
         .menu_botao {
             display: block;
             width: 3em;
@@ -77,10 +79,15 @@
     }
 
     @media screen and (max-width: 768px) {
-        .menu {
-            li {
-                a {
-                    font-size: 3vw;
+        .root {
+            .header {
+                flex-flow: row wrap;
+            }
+            .menu {
+                li {
+                    a {
+                        font-size: 3vw;
+                    }
                 }
             }
         }
@@ -93,6 +100,13 @@
                 a {
                     font-size: 20px;
                 }
+            }
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .header {
+            .logo {
+                padding-left: 1.5em;
             }
         }
     }

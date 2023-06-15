@@ -4,14 +4,14 @@
   padding: 1em;
   gap: 5px;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: #FFF;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
-.header img {
+.header .logo {
   max-width: 330px;
 }
 .header input {
@@ -22,6 +22,7 @@
 }
 .header .menu {
   padding: 0;
+  margin: 0 auto;
   display: flex;
   flex-flow: row;
   gap: 2vw;
@@ -60,7 +61,10 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .header .menu li a {
+  .header .root .header {
+    flex-flow: row wrap;
+  }
+  .header .root .menu li a {
     font-size: 3vw;
   }
 }
@@ -70,5 +74,10 @@
   }
   .header .menu li a {
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header .header .logo {
+    padding-left: 1.5em;
   }
 }/*# sourceMappingURL=header.css.map */

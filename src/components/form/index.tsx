@@ -1,12 +1,14 @@
+import IngressoResultado from '../../pages/IngressoResultado';
 import Ingresso, { ingresso } from '../ingresso';
 import './form.css';
-import { FormEventHandler, useState } from "react";
+import { FormEventHandler, useState, createContext } from "react";
 
 export const Formulario = () => {
   const [nome, setNome] = useState('Não encontrado')
   const [tipo, setTipo] = useState('Não encontrado')
   const [dia, setDia] = useState('Não encontrado')
   const [data, setData] = useState('Não encontrado')
+  const CIngresso = createContext<ingresso>({nome, tipo, dia});
 
   function pegarInfo() {
     const setterNome = document.querySelector<HTMLInputElement>('#nome')?.value;
@@ -24,22 +26,24 @@ export const Formulario = () => {
     if (data) {
       const nascimento = new Date(data);
       const idade = Math.floor((Date.now() - nascimento.getTime()) / (31557600000));
-      if (idade <= 16) {
+      if (idade < 16) {
         return (alert('Você deve ser maior que 16 anos.'))
       } else if (idade > 100) {
-        return (alert('Idade Inválida'))
+        return (alert('Idade Inválida!'))
       }
     }
     return (
-    <>
-      <Ingresso 
-      nome='Elias Barão'
-      dia='Sábado'
-      tipo='Pista Premium'
-      data='02-05-2002'
-      />
-      {window.location.href = '/ingresso-resumo'}
-    </>
+      <>
+        { CIngresso }
+        <CIngresso.Provider value={{nome, tipo, dia}} />
+        {/* <IngressoResultado
+          nome={nome}
+          tipo={tipo}
+          dia={dia}
+        /> */}
+        { console.log('1', nome, tipo, dia, Ingresso) }
+        {/* {window.location.href = '/ingresso-resumo'} */}
+      </>
     )
   }
   return (

@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className='header'>
             <Link to="/">
-                <img src='./imagens/Logo-branco.png' alt="Logo CodeChella" />
+                <img className='logo' src='./imagens/Logo-branco.png' alt="Logo CodeChella" />
             </Link>
 
             <input type="checkbox" name="menu" id="menu" />
