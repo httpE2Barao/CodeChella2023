@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react'
-// import { CIngresso } from '../form'
+import CIngresso from '../form'
+
 import './ingresso.css'
 
 export interface ingresso {
@@ -11,7 +12,7 @@ export interface ingresso {
 
 const Ingresso = () => {
 
-  const {nome=''} = useContext(CIngresso)
+  // const {nome, tipo, dia} = useContext(CIngresso)
 
   return (
     <section className="ingresso">
