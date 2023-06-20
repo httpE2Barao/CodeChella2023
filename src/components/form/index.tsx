@@ -1,83 +1,69 @@
-import IngressoResultado from '../../pages/IngressoResultado';
-import Ingresso, { ingresso } from '../ingresso';
+import React, { useContext, useState } from 'react';
 import './form.css';
-import { FormEventHandler, useState, createContext } from "react";
+import { IngressoContext } from '../ingresso/ingresso_provider';
 
-export const Formulario = () => {
-  const [nome, setNome] = useState('Void')
-  const [tipo, setTipo] = useState('Void')
-  const [dia, setDia] = useState('Void')
-  const [data, setData] = useState('Void')
-  const CIngresso = createContext<ingresso>({ nome, tipo, dia });
+const Formulario = () => {
+  const [data, setData] = useState('Void');
+  const { setIngressoData } = useContext(IngressoContext);
 
-  function pegarInfo() {
+  const pegarInfo = () => {
     const setterNome = document.querySelector<HTMLInputElement>('#nome')?.value;
-    setNome(setterNome ?? 'Não encontrado');
     const setterData = document.querySelector<HTMLInputElement>('#data')?.value;
+    const setterTipo = document.querySelector<HTMLSelectElement>('#tipo')?.value;
+    const setterDia = document.querySelector<HTMLSelectElement>('#dia')?.value;
+
+    setIngressoData(setterNome ?? 'Não encontrado', setterTipo ?? 'Não encontrado', setterDia ?? 'Não encontrado');
+
     setData(setterData ?? 'Não encontrado');
-    const setterTipo = document.querySelector<HTMLInputElement>('#tipo')?.value;
-    setTipo(setterTipo ?? 'Não encontrado');
-    const setterDia = document.querySelector<HTMLInputElement>('#dia')?.value;
-    setDia(setterDia ?? 'Não encontrado');
+  };
 
-    const Valores = { nome, tipo, dia };
-    console.log("0", Valores)
-
-    return (
-      <CIngresso.Provider value={Valores} />
-    )
-  }
-
-  const Validacao: FormEventHandler<HTMLFormElement> = (event: any) => {
+  const Validacao = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (data) {
+    if (data !== 'Void') {
       const nascimento = new Date(data);
       const idade = Math.floor((Date.now() - nascimento.getTime()) / (31557600000));
       if (idade < 16) {
-        return (alert('Você deve ser maior que 16 anos.'))
+        alert('Você deve ser maior que 16 anos.');
       } else if (idade > 100) {
-        return (alert('Idade Inválida!'))
+        alert('Idade Inválida!');
       }
+      window.location.href = '/ingresso-resumo'; // Redireciona para a página de resumo do ingresso
     }
-    return (
-      <CIngresso.Provider value={{ nome, tipo, dia }} />
-    )
-  }
+  };
+
   return (
-    <>
-      <section className="formulario">
-        <h2 className="formulario_titulo">Preencha o formulário a seguir:</h2>
-        <form className="formulario_flex" onSubmit={Validacao} onChange={pegarInfo}>
+    <section className="formulario">
+      <h2 className="formulario_titulo">Preencha o formulário a seguir:</h2>
+      <form className="formulario_flex" onSubmit={Validacao} onChange={pegarInfo}>
+        <label htmlFor="nome" className="formulario_label">Nome Completo:</label>
+        <input type="text" id="nome" required />
 
-          <label htmlFor="nome" className="formulario_label">Nome Completo:</label>
-          <input type="text" id="nome" required />
+        <label htmlFor="email" className="formulario_label">Email:</label>
+        <input type="email" id="email" required />
 
-          <label htmlFor="email" className="formulario_label">Email:</label>
-          <input type="email" id="email" required />
+        <label htmlFor="tipo" className="formulario_label">Tipo do Ingresso:</label>
+        <select id="tipo" required>
+          <option value=""></option>
+          <option value="Pista Comum">Pista Comum</option>
+          <option value="Pista Premium">Pista Premium</option>
+          <option value="Cadeiras Térreo">Cadeiras Térreo</option>
+          <option value="Cadeiras Superiores">Cadeiras Superiores</option>
+        </select>
 
-          <label htmlFor="tipo" className="formulario_label">Tipo do Ingresso:</label>
-          <select id='tipo' required>
-            <option value=""></option>
-            <option value='Pista Comum'>Pista Comum</option>
-            <option value='Pista Premium'>Pista Premium</option>
-            <option value='Cadeiras Térreo'>Cadeiras Térreo</option>
-            <option value='Cadeiras Superiores'>Cadeiras Superiores</option>
-          </select>
+        <label htmlFor="dia" className="formulario_label">Dia:</label>
+        <select id="dia" required>
+          <option value=""></option>
+          <option value="Sábado">Sábado - 11/03</option>
+          <option value="Domingo">Domingo - 12/03</option>
+        </select>
 
-          <label htmlFor="dia" className='formulario_label'>Dia:</label>
-          <select id="dia" required>
-            <option value=""></option>
-            <option value="Sábado">Sábado - 11/03</option>
-            <option value="Domingo">Domingo - 12/03</option>
-          </select>
+        <label htmlFor="data" className="formulario_label">Data de Nascimento:</label>
+        <input type="date" id="data" required />
 
-          <label htmlFor="data" className="formulario_label">Data de Nascimento:</label>
-          <input type="date" id="data" required />
+        <input className="botao" type="submit" value="Avançar!" />
+      </form>
+    </section>
+  );
+};
 
-          <input className='botao' type="submit" value="Avançar!" onClick={pegarInfo} />
-        </form>
-      </section>
-    </>
-  )
-}
 export default Formulario;

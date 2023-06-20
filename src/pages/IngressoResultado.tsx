@@ -1,7 +1,9 @@
-import Banner from "../components/banner";
-import Footer from "../components/footer";
-import Header from "../components/header";
-import Ingresso, { ingresso } from "../components/ingresso";
+import React from 'react';
+import Header from '../components/header';
+import Banner from '../components/banner';
+import Ingresso from '../components/ingresso';
+import Footer from '../components/footer';
+import IngressoProvider from '../components/ingresso/ingresso_provider';
 
 const IngressoResultado = () => {
   return (
@@ -12,12 +14,12 @@ const IngressoResultado = () => {
         src="./imagens/pngs/6 - Banner - seu ingresso está aqui.png"
         alt="Imagem de pessoas comemorando"
       />
-
-      <Ingresso 
-
-      />
+      <IngressoProvider>
+        <Ingresso />
+      </IngressoProvider>
       <Footer />
     </>
-  )
-}
+  );
+};
+
 export default IngressoResultado;
