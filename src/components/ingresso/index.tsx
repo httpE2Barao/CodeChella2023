@@ -1,12 +1,14 @@
-import { useContext } from 'react'
-import { IngressoContext, IngressoContextValue  } from './ingresso_provider'
 import './ingresso.css'
+import { useLocation } from 'react-router-dom';
 
 const Ingresso = () => {
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const nome = searchParams.get('nome');
+  const tipo = searchParams.get('tipo');
+  const dia = searchParams.get('dia');
 
-  const { nome, tipo, dia } = useContext<IngressoContextValue>(IngressoContext)
-
-  console.log('3', nome, tipo, dia)
+  console.log("2", nome, tipo, dia)
 
   return (
     <section className="ingresso">
@@ -32,7 +34,7 @@ const Ingresso = () => {
         <p>Local: Curitiba-PR</p>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Ingresso;

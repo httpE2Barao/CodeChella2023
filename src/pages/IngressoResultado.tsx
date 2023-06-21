@@ -3,7 +3,6 @@ import Header from '../components/header';
 import Banner from '../components/banner';
 import Ingresso from '../components/ingresso';
 import Footer from '../components/footer';
-import IngressoProvider from '../components/ingresso/ingresso_provider';
 
 const IngressoResultado = () => {
   return (
@@ -14,9 +13,7 @@ const IngressoResultado = () => {
         src="./imagens/pngs/6 - Banner - seu ingresso está aqui.png"
         alt="Imagem de pessoas comemorando"
       />
-      <IngressoProvider>
-        <Ingresso />
-      </IngressoProvider>
+      <Ingresso />
       <Footer />
     </>
   );

@@ -10,14 +10,14 @@ import IngressoResultado from './pages/IngressoResultado';
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/experiencia" element={<Experiencia />} />
-        <Route path="/setores" element={<Setores />} />
-        <Route path="/informacoes" element={<Informacoes />} />
-        <Route path="/ingresso" element={<IngressoForm />} />
-        <Route path="/ingresso-resumo" element={<IngressoResultado />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/experiencia" element={<Experiencia />} />
+          <Route path="/setores" element={<Setores />} />
+          <Route path="/informacoes" element={<Informacoes />} />
+          <Route path="/ingresso" element={<IngressoForm />} />
+          <Route path="/ingresso-resumo" element={<IngressoResultado />} />
+        </Routes>
     </BrowserRouter>
   );
 };
