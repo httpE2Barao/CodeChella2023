@@ -19,6 +19,18 @@
                 cursor: pointer;
             }
         }
+        p {
+            a {
+                color: #000;
+                font-weight: 600;
+                &:hover {
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+    .aside {
+        line-height: 30px;
         div {
             img {
                 width: 30px;
@@ -27,18 +39,6 @@
                 &:hover {
                     cursor: pointer;
                     background-color: #fff;
-                }
-            }
-        }
-    }
-    .aside {
-        line-height: 30px;
-        p {
-            a {
-                color: #000;
-                font-weight: 600;
-                &:hover {
-                    border-bottom: 2px solid black;
                 }
             }
         }
