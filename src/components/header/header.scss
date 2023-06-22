@@ -7,13 +7,12 @@
     gap: 5px;
 
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
     color: #FFF;
     font-family: $font-principal;
-    font-weight: 700;
 
     .logo {
         max-width: 330px;
@@ -31,28 +30,34 @@
         padding: 0;
         margin: 0 auto;
         display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
         gap: 2vw;
 
         li {
-            background-color: $azul-botao;
+            background-color: #000000a7;
             padding: 4px 7px 7px;
             border-radius: 5px;
+            transition: background-color .4s;
 
             a {
                 color: #FFF;
-                font-size: 2.5vw;
+                font-size: 2.6vw;
+                font-weight: 600;
             }
 
             &:hover {
                 background-color: $azul-escuro;
+                cursor: pointer;
+                transition: background-color .4s;
             }
 
         }
     }
+}
 
-    @media screen and (max-width: 440px) {
-
+@media screen and (max-width: 500px) {
+    .header {
+        align-items: center;
         .menu_botao {
             display: block;
             width: 3em;
@@ -70,38 +75,46 @@
 
             li {
                 margin-top: .5em;
-                width: 60vw;
-
-                a {
-                    font-size: 4vw;
-                }
+                padding: .5em;
+                width: 50vw;
             }
         }
     }
+}
 
-    @media screen and (max-width: 768px) {
-        .root {
-            .header {
-                flex-flow: row wrap;
-            }
+@media screen and (min-width: 500px) {
+    .header {
+        .logo {
+            margin-left: 2em;
         }
     }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        flex-flow: column wrap;
+    }
+}
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .header {
         .menu {
+            text-align: right;
+
             li {
                 padding: .5em 1em;
+
                 a {
                     font-size: 20px;
                 }
             }
         }
     }
-    @media screen and (min-width: 1000px) {
-        .header {
-            .logo {
-                padding-left: 1.5em;
-            }
+}
+
+@media screen and (min-width: 1000px) {
+    .header {
+        .logo {
+            padding-left: 1.5em;
         }
     }
 }
