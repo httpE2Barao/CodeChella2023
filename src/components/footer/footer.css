@@ -15,24 +15,24 @@
 .footer .logo_container img:hover {
   cursor: pointer;
 }
-.footer .logo_container div img {
-  width: 30px;
-  margin: 4px 0.5em 0;
-  border-radius: 7px;
+.footer .logo_container p a {
+  color: #000;
+  font-weight: 600;
 }
-.footer .logo_container div img:hover {
-  cursor: pointer;
-  background-color: #fff;
+.footer .logo_container p a:hover {
+  border-bottom: 2px solid black;
 }
 .footer .aside {
   line-height: 30px;
 }
-.footer .aside p a {
-  color: #000;
-  font-weight: 600;
+.footer .aside div img {
+  width: 30px;
+  margin: 4px 0.5em 0;
+  border-radius: 7px;
 }
-.footer .aside p a:hover {
-  border-bottom: 2px solid black;
+.footer .aside div img:hover {
+  cursor: pointer;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 768px) {
