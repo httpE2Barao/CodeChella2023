@@ -15,6 +15,9 @@
 .footer .logo_container img:hover {
   cursor: pointer;
 }
+.footer .logo_container p {
+  height: 25px;
+}
 .footer .logo_container p a {
   color: #000;
   font-weight: 600;
