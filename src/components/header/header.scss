@@ -7,7 +7,7 @@
     gap: 5px;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 
@@ -57,7 +57,12 @@
 
 @media screen and (max-width: 500px) {
     .header {
-        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            max-width: 230px;
+        }
+
         .menu_botao {
             display: block;
             width: 3em;
@@ -65,33 +70,33 @@
         }
 
         #menu:checked~.menu {
-            display: contents;
+            display: flex;
+            justify-content: center;
         }
 
         .menu {
             display: none;
             background-color: $azul-escuro;
             text-align: center;
+            padding: 1em 0;
 
             li {
                 margin-top: .5em;
                 padding: .5em;
                 width: 50vw;
+                a {
+                    font-size: 15px;
+                }
             }
         }
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 501px) {
     .header {
         .logo {
             margin-left: 2em;
         }
-    }
-}
-@media screen and (max-width: 768px) {
-    .header {
-        flex-flow: column wrap;
     }
 }
 
