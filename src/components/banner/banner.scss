@@ -3,13 +3,14 @@
 .banner {
     min-height: 40vh;
     overflow: hidden;
+    position: relative;
 
     display: flex;
     align-items: center;
     justify-content: center;
     img {
         overflow-x: unset;
-        position: relative;
+        position: absolute;
         z-index: -1;
         height: 100%;
     }
